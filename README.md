@@ -8,12 +8,12 @@
 ![Tools](./Screenshot/ScreenShot_Dark_Theme_4.png)
 ### Dark Theme
 ![Home Page](./Screenshot/ScreenShot_White_Theme_1.png)
-![About Page](./Screenshot/ScreenShot_White_Theme_1.png)
-![Skills](./Screenshot/ScreenShot_White_Theme_1.png)
-![Tools](./Screenshot/ScreenShot_White_Theme_1.png)
+![About Page](./Screenshot/ScreenShot_White_Theme_2.png)
+![Skills](./Screenshot/ScreenShot_White_Theme_3.png)
+![Tools](./Screenshot/ScreenShot_White_Theme_4.png)
  
 
-Welcome to my official personal portfolio website! This website showcases my skills and tools, and provides information about me, Shiva Raj Paudel.
+Welcome to my official personal portfolio website! This website showcases my skills and tools and provides information about me, Shiva Raj Paudel.
 
 ## Table of Contents
 
