@@ -37,7 +37,7 @@ A personal portfolio website designed to present my skills as a Full-Stack Devel
 
 ## Getting Started
 
-To explore the website, simply open the [Beexoul Portfolio](www.shivarajpaudel.com.np) link in your web browser.
+To explore the website, simply open the [Beexoul Portfolio](https://shivarajpaudel.netlify.app/) link in your web browser.
 
 ## Usage
 
