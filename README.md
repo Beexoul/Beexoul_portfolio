@@ -1,11 +1,7 @@
  # Personal Portfolio Website
 
 ## Screenshots
-### Dark Theme
-![Home Page](./Screenshot/ScreenShot_Dark_Theme_1.png)
-![About Page](./Screenshot/ScreenShot_Dark_Theme_2.png)
-![Skills](./Screenshot/ScreenShot_Dark_Theme_3.png)
-![Tools](./Screenshot/ScreenShot_Dark_Theme_4.png)
+
 ### Light Theme
 ![Home Page](./screenshot/ScreenShot_White_Theme_1.png)
 ![About Page](./screenshot/ScreenShot_White_Theme_2.png)
