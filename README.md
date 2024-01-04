@@ -2,9 +2,9 @@
 
 ## Screenshots
 ![Home Page](./Screenshot/ScreenShot_Dark_Theme_1.png)
-![About Page](http://url/to/img.png)
-![Skills](http://url/to/img.png)
-![Tools](http://url/to/img.png)
+![About Page](./Screenshot/ScreenShot_Dark_Theme_2.png)
+![Skills](./Screenshot/ScreenShot_Dark_Theme_3.png)
+![Tools](./Screenshot/ScreenShot_Dark_Theme_4.png)
 
 ![Home Page](./)
 ![About Page](http://url/to/img.png)
