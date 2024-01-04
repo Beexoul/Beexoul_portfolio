@@ -1,12 +1,16 @@
  # Personal Portfolio Website
 
 ## Screenshots
-
-### Light Theme
-![Home Page](./screenshot/ScreenShot_White_Theme_1.png)
-![About Page](./screenshot/ScreenShot_White_Theme_2.png)
-![Skills](./screenshot/ScreenShot_White_Theme_3.png)
-![Tools](./screenshot/ScreenShot_White_Theme_4.png)
+### Dark Theme
+![Home Page](./Screenshot/ScreenShot_Dark_Theme_1.png)
+![About Page](./Screenshot/ScreenShot_Dark_Theme_2.png)
+![Skills](./Screenshot/ScreenShot_Dark_Theme_3.png)
+![Tools](./Screenshot/ScreenShot_Dark_Theme_4.png)
+### Dark Theme
+![Home Page](./Screenshot/ScreenShot_Dark_Theme_1.png)
+![About Page](./Screenshot/ScreenShot_Dark_Theme_2.png)
+![Skills](./Screenshot/ScreenShot_Dark_Theme_3.png)
+![Tools](./Screenshot/ScreenShot_Dark_Theme_4.png)
  
 
 Welcome to my official personal portfolio website! This website showcases my skills and tools, and provides information about me, Shiva Raj Paudel.
