@@ -6,7 +6,7 @@
 ![About Page](./Screenshot/ScreenShot_Dark_Theme_2.png)
 ![Skills](./Screenshot/ScreenShot_Dark_Theme_3.png)
 ![Tools](./Screenshot/ScreenShot_Dark_Theme_4.png)
-### Dark Theme
+### Light Theme
 ![Home Page](./Screenshot/ScreenShot_White_Theme_1.png)
 ![About Page](./Screenshot/ScreenShot_White_Theme_2.png)
 ![Skills](./Screenshot/ScreenShot_White_Theme_3.png)
