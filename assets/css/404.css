@@ -1,0 +1,390 @@
+:root {
+  --raw-seinna: hsl(24, 74%, 58%);
+  --sizzling-sunrise: hsl(51, 95%, 54%);
+  --scarlet: hsl(13, 96%, 47%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --ff-saira-stencil-one: "Saira Stencil One", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-roboto: "Roboto", sans-serif;
+  --fs-1: 2rem;
+  --fs-2: calc(1.813rem + 1vw);
+  --fs-3: calc(1.313rem + 1vw);
+  --fs-4: 1.4rem;
+  --fs-5: 1rem;
+  --fs-6: 0.813rem;
+  --fs-7: 0.75rem;
+  --fw-400: 400;
+  --fw-700: 700;
+  --transition-1: 0.25s ease-in-out;
+  --section-padding: 80px;
+  --radius-4: 4px;
+  --radius-12: 12px;
+}
+
+body.dark_theme {
+  --bg-primary: hsl(0, 0%, 12%);
+  --bg-secondary: hsl(0, 0%, 19%);
+  --color-primary: hsl(0, 0%, 100%);
+  --color-secondary: hsl(0, 0%, 62%);
+  --card-shadow: hsla(0, 0%, 0%, 0.4);
+  --input-bg: hsl(0, 0%, 16%);
+}
+
+body.light_theme {
+  --bg-primary: hsl(0, 0%, 90%);
+  --bg-secondary: hsl(0, 0%, 100%);
+  --color-primary: hsl(0, 0%, 12%);
+  --color-secondary: hsl(0, 0%, 37%);
+  --card-shadow: hsla(0, 0%, 0%, 0.1);
+  --input-bg: hsl(0, 0%, 93%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-roboto);
+  background: var(--bg-primary);
+  color: var(--color-primary);
+  min-height: 100vh;
+  transition: var(--transition-1);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+.error-content {
+  text-align: center;
+  max-width: 600px;
+  z-index: 2;
+  position: relative;
+}
+
+.error-code {
+  font-size: clamp(4rem, 15vw, 12rem);
+  font-family: var(--ff-saira-stencil-one);
+  font-weight: var(--fw-700);
+  color: var(--raw-seinna);
+  margin-bottom: 20px;
+  text-shadow: 0 0 30px rgba(218, 165, 32, 0.3);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.error-title {
+  font-size: var(--fs-2);
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-700);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.error-subtitle {
+  font-size: var(--fs-4);
+  color: var(--color-secondary);
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: transparent;
+  border: 2px solid var(--raw-seinna);
+  border-radius: var(--radius-4);
+  color: var(--raw-seinna);
+  text-decoration: none;
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all var(--transition-1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--raw-seinna);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  left: 0;
+}
+
+.btn:hover {
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(218, 165, 32, 0.3);
+}
+
+.astronaut {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 300px;
+  opacity: 0.8;
+  animation: float 3s ease-in-out infinite;
+}
+
+.astronaut-body {
+  width: 120px;
+  height: 150px;
+  background: var(--color-secondary);
+  border-radius: 60px 60px 40px 40px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.astronaut-helmet {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid var(--color-secondary);
+}
+
+.astronaut-visor {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #1a237e, #3949ab);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.astronaut-backpack {
+  width: 60px;
+  height: 80px;
+  background: var(--raw-seinna);
+  border-radius: 10px;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.astronaut-arm {
+  width: 30px;
+  height: 80px;
+  background: var(--color-secondary);
+  border-radius: 15px;
+  position: absolute;
+  top: 40px;
+}
+
+.astronaut-arm.left {
+  left: -20px;
+  transform: rotate(-20deg);
+}
+
+.astronaut-arm.right {
+  right: -20px;
+  transform: rotate(20deg);
+}
+
+.astronaut-leg {
+  width: 25px;
+  height: 70px;
+  background: var(--color-secondary);
+  border-radius: 12px;
+  position: absolute;
+  bottom: -60px;
+}
+
+.astronaut-leg.left {
+  left: 30px;
+}
+
+.astronaut-leg.right {
+  right: 30px;
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  background: var(--sizzling-sunrise);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  animation: twinkle 2s infinite;
+}
+
+.planets {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.planet-1 {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+  top: 20%;
+  left: 15%;
+  animation: orbit 20s linear infinite;
+}
+
+.planet-2 {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #4ecdc4, #44a08d);
+  top: 70%;
+  right: 20%;
+  animation: orbit 15s linear infinite reverse;
+}
+
+.planet-3 {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, #a8edea, #fed6e3);
+  bottom: 30%;
+  left: 10%;
+  animation: orbit 25s linear infinite;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all var(--transition-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  z-index: 1000;
+}
+
+.theme-toggle:hover {
+  background: var(--color-primary);
+  color: var(--bg-primary);
+  transform: rotate(180deg);
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 30px rgba(218, 165, 32, 0.3);
+  }
+  to {
+    text-shadow: 0 0 40px rgba(218, 165, 32, 0.6),
+      0 0 60px rgba(218, 165, 32, 0.4);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-60%) rotate(5deg);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .astronaut {
+    display: none;
+  }
+
+  .error-content {
+    padding: 0 20px;
+  }
+
+  .theme-toggle {
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-code {
+    font-size: 8rem;
+  }
+
+  .error-title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}
